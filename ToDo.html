@@ -26,6 +26,20 @@
                 <br>  
             </div>            
         </div>        
-    </div>          
+    </div>
+    <script>
+    window.onbeforeunload = function() {
+        sessionStorage.setItem("todoItem", $(".txtBox").val());
+    }
+
+    window.onload = function() {
+        if (sessionStorage.getItem('todoItem') == "todoItem") {
+            return;
+        }
+        var item = sessionStorage.getItem('todoItem');
+        if (item !== null) $(".pending").val(item);
+    }
+    </script>        
 </body>
 </html>
+

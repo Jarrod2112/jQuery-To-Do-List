@@ -65,7 +65,7 @@ button{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); 
   background: url("https://i.stack.imgur.com/p9mUO.jpg");  
-  padding: 10px;
+  padding: 10px; 
 }
 
 
